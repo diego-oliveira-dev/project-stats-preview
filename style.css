@@ -25,7 +25,7 @@ main {
 section#card {
     background-color: hsl(244, 38%, 16%);
     text-align: center;
-    max-width: 300px;
+    width: 300px;
 }
 
 section#pink-image {
@@ -45,7 +45,7 @@ section#image {
 }
 
 section#pink {
-    background-color: hsla(277, 64%, 61%, 0.374);
+    background-color: hsla(277, 64%, 61%, 0.444);
     height: 220px;
     width: 300px;
 
@@ -54,7 +54,7 @@ section#pink {
 }
 
 section#body {
-    font-family: 'Lexend Deca', sans-serif;;
+    font-family: 'Inter', sans-serif;;
     margin: 20px 20px;
 }
 
@@ -71,15 +71,16 @@ section#text > h1 > strong {
 
 section#text > p {
     color: hsla(0, 0%, 100%, 0.75);
+    font-size: .95em;
     line-height: 1.4em;
 }
 
 section#stats {
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Lexend Deca', sans-serif;;
     margin: 20px 0px;
 }
 
-section#stats > p.number {
+section#stats > div > p.number {
     color: white;
     font-weight: bolder;
     font-size: 20px;
@@ -87,8 +88,11 @@ section#stats > p.number {
     margin-bottom: 5px;
 }
 
-section#stats > p.stats-text {
+section#stats > div >  p.stats-text {
     color: hsla(0, 0%, 100%, 0.6);
-    font-weight: 700;
     font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    
 }
