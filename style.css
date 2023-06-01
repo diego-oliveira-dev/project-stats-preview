@@ -45,7 +45,7 @@ section#image {
 }
 
 section#pink {
-    background-color: hsla(277, 64%, 61%, 0.444);
+    background-color: hsla(277, 64%, 61%, 0.45);
     height: 220px;
     width: 300px;
 
@@ -94,5 +94,64 @@ section#stats > div >  p.stats-text {
 }
 
 @media screen and (min-width: 768px) {
-    
+    section#card {
+        width: 750px;
+        height: 310px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    section#pink-img {
+        width: 50%;
+        height: 100%;
+    }
+
+    section#image {
+        width: 100%;
+        height: 100%;
+        background: black url(images/image-header-desktop.jpg) no-repeat;
+        background-size: 100%;
+    }
+
+    section#pink {
+        width: 100%;
+        height: 100%;
+    }
+
+    section#body {
+        width: 50%;
+        margin: 0px;
+        padding: 0px 30px 0px 30px;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section#text > h1 {
+        margin: 0px;
+        line-height: 1.2em;
+    }
+
+    section#text > p {
+        font-size: .8em;
+        line-height: 1.4em;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    section#stats {
+        margin: 40px 40px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section#stats > div > p.number {
+        margin: 0px 0px 3px 0px;
+        font-size: 1.2em;
+    }
+
+    section#stats > div > p.stats-text {
+        font-size: .7em;
+    }
 }
